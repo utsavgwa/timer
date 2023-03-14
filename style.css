@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yatra+One&display=swap');
 
 html {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: 'Yatra One', cursive;
 }
 
 /* Video Background */
@@ -50,7 +50,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-  background:rgba(245, 245, 245, 0.50);
+  background:rgba(245, 245, 245, 0.80);
 }
 
 .input-container {
@@ -83,7 +83,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Button */
@@ -94,13 +94,17 @@ button {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
-  background: #006959;
+  background: #BD9334;
+  /* DEBE5A */
   color: white;
   cursor: pointer;
   outline: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-
+button:hover{
+  filter: brightness(115%);
+}
 
 /* Countdown */
 ul {
@@ -143,7 +147,8 @@ li span {
   }
 
   .container {
-
+    min-width: unset;
+    width: 95vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
