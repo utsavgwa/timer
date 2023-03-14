@@ -50,7 +50,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background:rgba(245, 245, 245, 0.50);
 }
 
 .input-container {
