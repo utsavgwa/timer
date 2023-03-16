@@ -21,6 +21,7 @@
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#DEBE5A">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- end traditional metadata tags -->
     <title>Timer</title>
@@ -43,7 +44,7 @@
     <div class="video-overlay"></div>
     <!-- container -->
     <div class="container">
-      <div class="input-container" id="input-container">
+      <div class="input-container" id="input-container" hidden>
         <h1>Create a Custom Countdown</h1>
         <form class="form" id="countdownForm">
           <label for="title">Title</label>
@@ -52,6 +53,23 @@
           <input type="date" id="date-picker">
           <button type="submit">Submit</button>
         </form>
+      </div>
+      <!-- countdown -->
+      <div class="countdown" id="countdown" hidden>
+        <h1 id="countdown-title">Countdown Title that gets changed</h1>
+        <ul>
+          <li><span>2</span>Days</li>
+          <li><span>4</span>Hours</li>
+          <li><span>8</span>Minutes</li>
+          <li><span>16</span>Seconds</li>
+        </ul>
+        <button id="countdown-button">Reset</button>
+      </div>
+      <!-- complete countdown -->
+      <div class="complete" id="complete">
+        <h1 class="complete-title" id="complete-title">Countdown Complete!</h1>
+        <h1 id="complete-info">Countdown title completed on 05-05-2020</h1>
+        <button id="complete-button">New Countdown Timer</button>
       </div>
     </div>
     <!-- script -->
