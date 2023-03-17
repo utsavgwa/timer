@@ -208,3 +208,55 @@ li span {
     font-size: 40px;
   }
 }
+
+/* Media Query: Small Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .video-background {
+    height:100vh;
+    width:100vw; 
+  }
+  
+  video {
+    object-fit: cover;
+    /* to shift the video a little, to make it more in center */
+    object-position: 44%;
+    margin-top: -1px;
+  }
+
+  .container {
+    min-width: unset;
+    width: 95vw;
+    min-height: 245px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .input-container {
+    top: unset;
+  }
+
+  .countdown {
+    position: relative;
+    top: 10px;
+  }
+
+  .form {
+    width: unset;
+  }
+
+  input {
+    width: 93%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 12.5px;
+  }
+
+  li span {
+    font-size: 40px;
+  }
+}
