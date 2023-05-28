@@ -4,10 +4,7 @@
     <!-- begin open graph tags -->
     <meta property="og:title" content="Timer" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://utsavsingh.me/timer/"
-    />
+    <meta property="og:url" content="https://utsavgwa.github.io/timer" />
     <meta
       property="og:description"
       content="Timer is a user-friendly web application that allows you to create and customize countdown timers for your important events."
@@ -21,14 +18,14 @@
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#DEBE5A">
+    <meta name="theme-color" content="#DEBE5A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- end traditional metadata tags -->
     <title>Timer</title>
     <link
       rel="icon"
       type="image/png"
-      href="https://www.google.com/s2/favicons?domain=https://utsavsingh.me/"
+      href="https://www.google.com/s2/favicons?domain=https://utsavgwa.github.io/"
     />
     <link
       rel="stylesheet"
@@ -39,7 +36,7 @@
   <body>
     <!-- video background -->
     <video class="video-background" loop muted autoplay>
-      <source src="./time.mp4" type="video/mp4">
+      <source src="./time.mp4" type="video/mp4" />
     </video>
     <div class="video-overlay"></div>
     <!-- container -->
@@ -48,10 +45,16 @@
         <h1>Create a Custom Countdown</h1>
         <form class="form" id="countdownForm">
           <label for="title">Title</label>
-          <input type="text" id="title" placeholder="What are you counting down to?" required oninvalid="this.setCustomValidity('Enter Countdown Title please')"
-          oninput="setCustomValidity('')">
+          <input
+            type="text"
+            id="title"
+            placeholder="What are you counting down to?"
+            required
+            oninvalid="this.setCustomValidity('Enter Countdown Title please')"
+            oninput="setCustomValidity('')"
+          />
           <label for="date-picker">Select a Date</label>
-          <input type="date" id="date-picker">
+          <input type="date" id="date-picker" />
           <button type="submit">Submit</button>
         </form>
       </div>
